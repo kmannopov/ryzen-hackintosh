@@ -20,7 +20,7 @@ I would highly suggest generating a unique SMBIOS and editing the config.plist f
 | WiFi & Bluetooth | Intel Dual Band Wireless AC 3165            |
 | OS Disk (NVMe)   | WD Blue SN550 512GB NVME SSD                |
 
-**macOS version**: 12.0.1 (21A559)
+**macOS version**: Monterey 12.0.1 (21A559)
 **OpenCore version**: 0.7.5
 
 ## What is working:
@@ -30,10 +30,10 @@ I would highly suggest generating a unique SMBIOS and editing the config.plist f
 ## What is not working:
 
 - 3.5mm Microphone jack (you need to use a Bluetooth/USB microphone, or buy a 3.5mm to USB adapter). Alternatively, you can use VoodooHDA instead of AppleALC but there is a drop in audio quality.
-- Virtual Machines relying on AppleHV
-    -This includes VMWare, Parallels, Docker, Android Studio, etc
-    -VirtualBox is the sole exception as they have their own hypervisor
-    -VMware 10 and Parallels 13.1.0 do support their own hypervisor, however using such outdated VM software poses a large security threat
+- Virtual Machines relying on AppleHV  
+    -This includes VMWare, Parallels, Docker, Android Studio, etc.  
+    -VirtualBox is the sole exception as they have their own hypervisor.  
+    -VMware 10 and Parallels 13.1.0 do support their own hypervisor, although I would not recommend using such outdated VM software.    
 
 ## Known Bugs:
 - The inital software update check for MacOS causes the keyboard to stop working (unplugging and plugging the keyboard back in fixes it). The software update check can be disabled in System Preferences -> Software Update -> Advanced -> Check for updates.
