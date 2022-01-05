@@ -36,4 +36,4 @@ I would highly suggest generating a unique SMBIOS and editing the config.plist f
     -VMware 10 and Parallels 13.1.0 do support their own hypervisor, although I would not recommend using such outdated VM software.    
 
 ## Known Bugs:
-- The inital software update check for MacOS causes the keyboard to stop working (unplugging and plugging the keyboard back in fixes it). The software update check can be disabled in System Preferences -> Software Update -> Advanced -> Check for updates.
+- The inital software update check for MacOS causes the keyboard to stop working (unplugging and plugging it back in fixes the issue). The software update check can be disabled in System Preferences -> Software Update -> Advanced -> Check for updates.
