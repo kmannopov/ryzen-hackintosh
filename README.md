@@ -5,7 +5,7 @@
 
 ## Description:
 This is a working EFI configuration for those who want to install MacOS on their Ryzen systems, but don't want to go through the hassle of creating a new OpenCore configuration. The config has only been tested on the hardware listed below.
-I would highly suggest generating a unique SMBIOS and editing the config.plist file to update the old values. A guide on how to do that can be found [here](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo).
+I would highly suggest generating a unique SMBIOS and editing the config.plist file to update the old values, especially if you want iCloud and iMessage to work. A guide on how to do that can be found [here](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo).
 
 ## Verified Specification
 
@@ -31,9 +31,9 @@ I would highly suggest generating a unique SMBIOS and editing the config.plist f
 
 - 3.5mm Microphone jack (you need to use a Bluetooth/USB microphone, or buy a 3.5mm to USB adapter). Alternatively, you can use VoodooHDA instead of AppleALC but there is a drop in audio quality.
 - Virtual Machines relying on AppleHV
-    This includes VMWare, Parallels, Docker, Android Studio, etc
-    VirtualBox is the sole exception as they have their own hypervisor
-    VMware 10 and Parallels 13.1.0 do support their own hypervisor, however using such outdated VM software poses a large security threat
+    >This includes VMWare, Parallels, Docker, Android Studio, etc
+    >VirtualBox is the sole exception as they have their own hypervisor
+    >VMware 10 and Parallels 13.1.0 do support their own hypervisor, however using such outdated VM software poses a large security threat
 
 ## Known Bugs:
 - The inital software update check for MacOS causes the keyboard to stop working (unplugging and plugging the keyboard back in fixes it). The software update check can be disabled in System Preferences -> Software Update -> Advanced -> Check for updates.
